@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fungsi Javascript</title>
+    <script language="javascript">
+      function selamatdatang() {
+        alert("apa kabarnya");
+        alert("Selamat datang di website saya");
+      }
+      function cetakGenap(awal, akhir) {
+        for (i = awal; i <= akhir; i++) {
+          if (i % 2 == 0) {
+            alert(i);
+          }
+        }
+      }
+    </script>
+  </head>
+  <body onload="selamatdatang()">
+    Klik tombol untuk menampilkan bilangan genap antara 1-10
+    <br /><input
+      type="button"
+      onclick="cetakGenap(1,10)"
+      value="Cetak Bil Genap"
+    />
+  </body>
+</html>
