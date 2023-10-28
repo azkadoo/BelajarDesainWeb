@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Form</title>
+  </head>
+  <body>
+    <center>
+      <h1 style="color: #025099">Form Registrasi</h1>
+    </center>
+    <center>
+      <table
+        style="color: #025099"
+        width="500px"
+        border="1"
+        cellspacing="1"
+        cellpadding="6"
+        bgcolor="#CCFEFF"
+      >
+        <form method="post" action="" name="form1">
+          <tr>
+            <td>Nama</td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                size="20"
+                maxlength="20"
+                placeholder="Nama Lengkap"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>
+              <textarea name="alamat" rows="3" cols="30" required></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" name="jenkel" value="pria" />Pria
+              <input type="radio" name="jenkel" value="wanita" />Wanita
+            </td>
+          </tr>
+          <tr>
+            <td>Gawai</td>
+            <td>
+              <input type="checkbox" name="gawai" value="digicam" />Digital
+              Camera
+              <br />
+              <input type="checkbox" name="gawai" value="phone" />Smartphone
+              <br />
+              <input type="checkbox" name="gawai" value="tablet" />Tablet <br />
+            </td>
+          </tr>
+          <tr>
+            <td>Operating System</td>
+            <td>
+              <select name="os" id="">
+                <option value="windows">Windows</option>
+                <option value="macos">Mac OS</option>
+                <option value="linux">Linux</option>
+                <option value="other">Lainnya...</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Foto</td>
+            <td>
+              <input type="file" name="foto" accept=".jpg,.png" />
+            </td>
+          </tr>
+          <tr>
+            <td align="center" colspan="2" bgcolor="#025099">
+              <input type="submit" value="register" />
+            </td>
+          </tr>
+        </form>
+      </table>
+    </center>
+  </body>
+</html>
