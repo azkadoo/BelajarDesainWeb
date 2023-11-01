@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p class="teks" id="tekssatu">
+      Cerdas dan berbudi luhur merupakan dua hal yang terpadu yang tidak
+      terpisahkan, karena kecerdasan tanpa dilandasi budi yang luhur akan
+      cenderung digunakan untuk membodohi dan mencelakakan orang lain,
+      sebaliknya budi luhur tanpa diimbangi kecerdasan akan merupakan sasaran
+      kejahatan dan penindasan dari orang lain ~ Drs. Djaetun. HS
+    </p>
+
+    <p class="teks" id="teksdua">
+      Cerdas dan berbudi luhur merupakan dua hal yang terpadu yang tidak
+      terpisahkan, karena kecerdasan tanpa dilandasi budi yang luhur akan
+      cenderung digunakan untuk membodohi dan mencelakakan orang lain,
+      sebaliknya budi luhur tanpa diimbangi kecerdasan akan merupakan sasaran
+      kejahatan dan penindasan dari orang lain ~ Drs. Djaetun. HS
+    </p>
+
+    <div class="teks" id="tekstiga">
+      Cerdas dan berbudi luhur merupakan dua hal yang terpadu yang tidak
+      terpisahkan, karena kecerdasan tanpa dilandasi budi yang luhur akan
+      cenderung digunakan untuk membodohi dan mencelakakan orang lain,
+      sebaliknya budi luhur tanpa diimbangi kecerdasan akan merupakan sasaran
+      kejahatan dan penindasan dari orang lain ~ Drs. Djaetun. HS
+    </div>
+
+    <p id="teks">Teks sebelum disentuh Javascript</p>
+
+    <h3>Tambah teks</h3>
+    <ul id="tambah"></ul>
+
+    <button onclick="jalankan()">Function Jalankan()</button>
+    <button onclick="jalankan2()">Function Jalankan2()</button>
+    <button onclick="jalankan3()">Function Jalankan3()</button>
+    <button onclick="pengecekan()">Function Pengecekan()</button>
+    <button onclick="penambahan()">Function Penambahan()</button>
+
+    <script>
+      function jalankan() {
+        document.getElementById("tekstiga").style.color = "blue";
+        document.getElementById("tekstiga").style.backgroundColor = "yellow";
+      }
+      function jalankan2() {
+        document.getElementsByTagName("p")[0].style.color = "blue";
+      }
+      function jalankan3() {
+        document.getElementsByClassName("teks")[1].style.color = "blue";
+      }
+      function pengecekan() {
+        document.getElementById("teks").innerHTML =
+          "Teks sudah diubah oleh Javascript";
+      }
+      function penambahan() {
+        let list = document.createElement("li");
+        let text = document.createTextNode("nambah baru");
+        list.appendChild(text);
+        document.getElementById("tambah").appendChild(list);
+      }
+    </script>
+  </body>
+</html>
